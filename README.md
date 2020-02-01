@@ -15,6 +15,9 @@
 3 : Postgres db connection from docker
 - docker run -d --name=pg -p 5432:5432 -e POSTGRES_PASSWORD=12345 postgres
 
+4 : H2 db connection from docker
+- docker run -d -p 1521:1521 -p 81:81 -v /h2db:/h2db --name=MyH2Instance -e H2_OPTIONS='-ifNotExists' oscarfonts/h2
+
 
 
 
