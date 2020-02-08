@@ -18,6 +18,8 @@
 4 : H2 db connection from docker
 - docker run -d -p 1521:1521 -p 81:81 -v /h2db:/h2db --name=MyH2Instance -e H2_OPTIONS='-ifNotExists' oscarfonts/h2
 
+5 : Ubauntu instllation on docker
+docker run -m 1200M --cpus=2 -p 6075:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
 
 
 
